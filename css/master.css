@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-fixed {
+  background-color: red;
+  height: 150px;
+  width: calc(100vw - 500px);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.sidebar {
+  background-color: yellow;
+  height: calc(100vh - 150px);
+  width: 500px;
+}
+
+main {
+  background-color: purple;
+  height: calc(100vh - 150px);
+  width: calc(100vw - 350px);
+  display: flex;
+}
+
+.player-fixed {
+  background-color: green;
+  height: 150px;
+  width: 100vw;
+}
