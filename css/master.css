@@ -17,7 +17,6 @@ body {
 
 main {
   display: flex;
-  overflow-y: scroll;
 }
 
 .sidebar {
@@ -27,7 +26,8 @@ main {
 }
 
 .selections {
-  background-color: purple;
+  background-color: #141922;
+  overflow-y: scroll;
   height: calc(100vh - 120px);
   width: calc(100vw - 300px);
 }
@@ -45,7 +45,7 @@ section {
   background-color: yellow;
   height: 250px;
   width: 100%;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 /* NAVBAR TOP */
@@ -58,11 +58,29 @@ section {
   border-color: #ffffff;
   background-color: #000000;
   font-size: 18px;
-  margin-right: 10px;
+  margin-right: 25px;
 }
 
 .navbar-fixed {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  opacity: 0.9;
+}
+
+/* SIDEBAR */
+
+.sidebar {  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside {
+  color: #ffffff;
+}
+
+img.logo {
+  width: 75%;
+  height: auto;
 }
