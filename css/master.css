@@ -41,23 +41,15 @@ main {
   left: 0;
 }
 
-section {
-  background-color: yellow;
-  height: 250px;
-  width: 100%;
-  margin: 10px 0;
-}
-
 /* NAVBAR TOP */
 
 .navbar-button {
   height: 60px;
-  padding: 20px 50px;
+  padding: 10px 30px;
   border-radius: 30px;
   color: #ffffff;
   border-color: #ffffff;
   background-color: #000000;
-  font-size: 18px;
   margin-right: 25px;
 }
 
@@ -68,11 +60,12 @@ section {
   opacity: 0.9;
 }
 
+
+
 /* SIDEBAR */
 
 aside {
   color: #696969;
-  font-size: 20px;
   font-weight: bold;
 }
 
@@ -108,11 +101,7 @@ img.logo {
 }
 
 i.big-plus {
-  font-size: 60px;
-}
-
-.green-border {
-
+  font-size: 40px;
 }
 
 .add-playlist span {
@@ -121,6 +110,11 @@ i.big-plus {
 
 .sidebar ul li {
   padding-top: 15px;
+}
+
+.top-sidebar .playlist {
+  height: 30vh;
+  overflow-y: auto;
 }
 
 .user {
@@ -144,7 +138,7 @@ i.big-plus {
   color: #ffffff;
 }
 
-/* PLAYER */
+/* PLAYER BOTTOM*/
 
 .player-fixed {
   display: flex;
@@ -160,4 +154,77 @@ i.big-plus {
 .album-picture img {
   height: 50px;
   width: auto;
+  padding: 10px;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.add-favourite {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.album-info .track-name {
+  color: #696969;
+}
+
+.add-favourite i {
+  color: #696969;
+  padding-left: 10px;
+}
+
+/* SELECTIONS */
+
+.nav-main {
+  padding-top: 125px;
+  text-align: center;
+}
+
+.nav-main span {
+  text-transform: uppercase;
+  color: #696969;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.selections h1 {
+  color: #ffffff;
+  font-size: 36px;
+  padding-left: 20px;
+}
+
+.card-list {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100%/6 - 20px);
+  min-width: 150px;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .title-main {
+  margin: 5px;
+
+}
+
+.card .subtitle-main {
+  font-size: 14px;
+  color: #696969;
 }
