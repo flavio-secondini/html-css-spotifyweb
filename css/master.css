@@ -193,13 +193,17 @@ i.big-plus {
   padding: 0 10px;
 }
 
-.selections h1 {
-  color: #ffffff;
-  font-size: 36px;
-  padding-left: 20px;
+.list-title {
+  padding: 30px;
 }
 
-.card-list {
+.list-title h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+.recently-played {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -227,4 +231,21 @@ i.big-plus {
 .card .subtitle-main {
   font-size: 14px;
   color: #696969;
+}
+
+.suggested {
+  display: flex;
+}
+
+.subtitle-info {
+  font-size: 14px;
+  color: #696969;
+}
+
+.most-popular {
+  display: flex;
+}
+
+.card-round img {
+  border-radius: 50%;
 }
