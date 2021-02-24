@@ -8,7 +8,7 @@ body {
 
 .navbar-fixed {
   background-color: #000000;
-  height: 120px;
+  height: 100px;
   width: calc(100vw - 300px);
   position: fixed;
   top: 0;
@@ -21,20 +21,20 @@ main {
 
 .sidebar {
   background-color: #000000;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   width: 300px;
 }
 
 .selections {
   background-color: #141922;
   overflow-y: scroll;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   width: calc(100vw - 300px);
 }
 
 .player-fixed {
   background-color: #282828;
-  height: 120px;
+  height: 100px;
   width: 100vw;
   position: fixed;
   bottom: 0;
@@ -70,17 +70,94 @@ section {
 
 /* SIDEBAR */
 
-.sidebar {  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 aside {
-  color: #ffffff;
+  color: #696969;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 img.logo {
   width: 75%;
   height: auto;
+  position: relative;
+  left: -20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-sidebar, .bottom-sidebar {
+  padding-left: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar h1 {
+  color: #ffffff;
+}
+
+.add-playlist {
+  display: flex;
+  align-items: center;
+}
+
+i.big-plus {
+  font-size: 60px;
+}
+
+.green-border {
+
+}
+
+.add-playlist span {
+  padding-left: 20px;
+}
+
+.sidebar ul li {
+  padding-top: 15px;
+}
+
+.user {
+  padding: 0 20px 10px 20px;
+}
+
+.user-avatar {
+  background-color: #696969;
+  color: #ffffff;
+  border-radius: 50%;
+  border-style: none;
+  height: 30px;
+  width: 30px;
+}
+
+.user hr {
+  border-color: #696969;
+}
+
+.user-name {
+  color: #ffffff;
+}
+
+/* PLAYER */
+
+.player-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.player-left {
+  display: flex;
+}
+
+.album-picture img {
+  height: 50px;
+  width: auto;
 }
