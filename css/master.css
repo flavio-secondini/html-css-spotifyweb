@@ -60,8 +60,6 @@ main {
   opacity: 0.9;
 }
 
-
-
 /* SIDEBAR */
 
 aside {
@@ -72,8 +70,14 @@ aside {
 img.logo {
   width: 75%;
   height: auto;
-  position: relative;
-  left: -20px;
+}
+
+.logo-mobile {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
 }
 
 .sidebar {
@@ -82,8 +86,15 @@ img.logo {
   justify-content: space-between;
 }
 
-.top-sidebar, .bottom-sidebar {
+.sidebar ul li, .sidebar h1, .sidebar .add-playlist i {
   padding-left: 20px;
+}
+
+.sidebar ul li.green-border-left {
+  border-left: 5px solid #adff2f;
+  color: #ffffff;
+  margin-left: 2px;
+  padding-left: 13px;
 }
 
 .sidebar ul {
@@ -179,11 +190,30 @@ i.big-plus {
   padding-left: 10px;
 }
 
-/* SELECTIONS */
+/* SELECTIONS MAIN */
 
 .nav-main {
   padding-top: 125px;
   text-align: center;
+}
+
+.nav-main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-main ul li {
+  display: inline-block;
+}
+
+.nav-main ul li .green-border-bottom {
+  height: 5px;
+  width: 30px;
+  margin: 0;
+  position: relative;
+  left: calc(50% - 15px);
+  border-bottom: 3px solid #adff2f;
 }
 
 .nav-main span {
@@ -213,9 +243,10 @@ i.big-plus {
   width: calc(100%/6 - 20px);
   min-width: 150px;
   height: auto;
-  padding: 10px;
+  padding: 0.5vw;
   text-align: center;
   color: #ffffff;
+  position: relative;
 }
 
 .card img {
@@ -248,4 +279,94 @@ i.big-plus {
 
 .card-round img {
   border-radius: 50%;
+}
+
+.card-play-icon {
+  display: none;
+}
+
+.card-play-icon i {
+  font-size: 60px;
+  color: #ffffff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+/* HOVER */
+
+.hover-white:hover {
+  color: #ffffff;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.hover-button:hover {
+  height: 70px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card img:hover {
+  opacity: 0.5;
+}
+
+.card img:hover .card-play-icon {
+  display: inline-block;
+}
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 552px) {
+
+  .sidebar {
+    width: 50px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+  }
+
+  .sidebar ul li {
+    padding-left: 15px;
+  }
+
+  .sidebar ul li.green-border-left {
+    border-left: 0px solid #adff2f;
+    color: #ffffff;
+    margin-left: 0;
+    padding-left: 15px;
+  }
+
+  .sidebar ul li span, .playlist-title, .add-playlist, .bottom-sidebar span, .bottom-sidebar hr {
+    display: none;
+  }
+
+  .user {
+    padding: 10px;
+  }
+
+  .user .fa-arrow-alt-circle-down {
+    padding: 10px 5px;
+  }
+
+  .navbar-fixed {
+    width: calc(100vw - 50px);
+  }
+
+  .selections {
+    width: calc(100vw - 50px);
+  }
 }
