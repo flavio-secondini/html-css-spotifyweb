@@ -9,7 +9,7 @@ body {
 .navbar-fixed {
   background-color: #000000;
   height: 100px;
-  width: calc(100vw - 300px);
+  width: calc(100vw - 250px);
   position: fixed;
   top: 0;
   right: 0;
@@ -22,14 +22,14 @@ main {
 .sidebar {
   background-color: #000000;
   height: calc(100vh - 100px);
-  width: 300px;
+  width: 250px;
 }
 
 .selections {
   background-color: #141922;
   overflow-y: scroll;
   height: calc(100vh - 100px);
-  width: calc(100vw - 300px);
+  width: calc(100vw - 250px);
 }
 
 .player-fixed {
@@ -188,6 +188,25 @@ i.big-plus {
 .add-favourite i {
   color: #696969;
   padding-left: 10px;
+}
+
+.player-center {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-grow: 2;
+}
+
+.player-center i {
+  font-size: 40px;
+}
+
+.player-center .bar {
+  height: 5px;
+  width: 80%;
+  max-width: 300px;
+  border-radius: 20px;
+  background-color: #696969;
 }
 
 /* SELECTIONS MAIN */
